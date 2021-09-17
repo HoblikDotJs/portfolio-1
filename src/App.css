@@ -18,7 +18,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: #ffffff;
   height: 100%;
   overflow: auto;
@@ -28,6 +27,7 @@ body {
   font-family: "Homemade Apple", cursive;
   background-color: #282c34;
   border: none;
+  font-size: 3vh;
   color: white;
   text-decoration: underline;
   border-radius: 5px;
@@ -36,6 +36,7 @@ body {
   -ms-animation: fadein 3s; /* Internet Explorer */
   -o-animation: fadein 3s; /* Opera < 12.1 */
   animation: fadein 3s;
+  height: 3vh;
 }
 .App-link:hover {
   cursor: pointer;
@@ -94,14 +95,15 @@ body {
 .subtitle {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  font-size: 23px;
-  height: 20px;
+  font-size: 2.5vh;
+  height: 2vh;
   display: flex;
   flex-direction: column;
   margin-bottom: 8vh;
 }
 
 .work-page {
+  text-align: center;
   width: 100vw;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -114,7 +116,8 @@ body {
 
 .connect {
   padding-left: 25%;
-  padding-top: 15px;
+  padding-top: 2vh;
+  font-size: 2vh;
   font-family: "Dosis", sans-serif;
 }
 
@@ -128,15 +131,19 @@ body {
 .icons {
   display: grid;
   grid-template-columns: 8% 8% 8% 8% 8%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  grid-column-gap: 10px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  grid-column-gap: 1vw;
   padding-left: 17%;
 }
 
+h1 {
+  font-size: 4vh;
+}
+
 .icon-item {
-  height: 35px;
-  width: 35px;
+  max-height: 4vh;
+  max-width: 4vh;
   filter: invert(100%);
   opacity: 0.8;
 }
@@ -149,6 +156,7 @@ body {
 .samples {
   padding-top: 10%;
   font-family: "Dosis", sans-serif;
+  font-size: 2vh;
 }
 
 .card-grid-view {
@@ -166,15 +174,14 @@ body {
 
 .card-body {
   display: grid;
-  border-radius: 15px;
+  border-radius: 2vh;
   color: #a9a9a9;
-  margin: 5px;
+  margin: 0.5vh;
   cursor: pointer;
-
   transition: all 0.2s ease-out;
 }
 .card-body:hover {
-  box-shadow: 0 0 4em 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4em 0 rgba(0, 0, 0, 0.4);
   transform: scale(1.01);
 }
 .card-body:active {
@@ -192,20 +199,24 @@ body {
 }
 
 img {
-  border-radius: 10px;
-  height: 180px;
+  border-radius: 0.5vw;
+}
+
+.project-img {
+  padding-top: 0.56%;
 }
 
 .card-content h3 {
   margin: 0;
   padding: 0;
+  font-size: 3vh;
   padding-top: 5%;
 }
 
 .content-description {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  font-size: x-small;
+  font-size: 1vh;
   padding-top: 3%;
 }
 
@@ -263,7 +274,7 @@ img {
   }
   .card-img {
     display: inline-block;
-    padding-right: 0px;
+    padding-right: 0;
   }
   img {
     height: 100%;
@@ -296,7 +307,7 @@ img {
   }
   .card-img {
     display: inline-block;
-    padding-right: 0px;
+    padding-right: 0;
   }
   img {
     height: 100%;

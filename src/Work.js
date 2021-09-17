@@ -10,7 +10,7 @@ import './App.css';
 function Work() {
   return (
     <div className="work-page">
-        <div className="intro">
+        <div className="intro" style={{textAlign: "left"}}>
             <h1>I'm a software developer in Czechia.</h1>
             <h5 className="connect">LET'S CONNECT HERE:</h5>
             <row className="icons">

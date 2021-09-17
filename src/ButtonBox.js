@@ -1,13 +1,16 @@
 import React from "react";
+
+
+// gifs
 import gworkone from "./gifs/rpg/final.gif";
 import gworktwo from "./gifs/bug/final.gif";
 import gworkthree from "./gifs/ecosystem/final.gif";
-import gworkfour from "./gifs/bubbles/final.gif";
+import gworkfour from "./gifs/bubbles/final.gif"; 
+// jpgs
 import workone from "./gifs/rpg/final.jpg";
 import worktwo from "./gifs/bug/final.jpg";
 import workthree from "./gifs/ecosystem/final.jpg";
 import workfour from "./gifs/bubbles/final.jpg";
-import "./App.css";
 
 export const posts = [
   {
@@ -58,7 +61,7 @@ const UiCard = (props) => {
   return (
     <div class="card-wrapper" onClick={() => window.open(link)}>
       <div className="card-img">
-        <img alt="project"
+        <img className="project-img" alt="project"
           src={image}
           onMouseEnter={(e) => {
             e.currentTarget.src = gif;
